@@ -23,3 +23,11 @@ this case, they are two layers deep: In the game, but also fictional to the
 archivist.
 
 https://www.fox13now.com/2016/05/19/more-than-11000-without-power-in-salt-lake-city-magna-and-west-valley-city
+
+Use the gtk3 branch of gnome-inform7, or the Flatpak.
+
+[[https://intfiction.org/t/command-line-inform-7-how-to-use-ni-inform6-and-cblorb-by-cli/50108][CLI guide]]
+
+[[https://intfiction.org/t/spaceformacs-authoring-in-inform7-with-spac-emacs/46440][Emacs setup]]
+
+[[https://intfiction.org/t/inf7-a-cli-project-manager-for-inform-7/50931][Inf7]] (CLI manager in Ruby)
