@@ -26,6 +26,8 @@ https://www.fox13now.com/2016/05/19/more-than-11000-without-power-in-salt-lake-c
 
 Use the gtk3 branch of gnome-inform7, or the Flatpak.
 
+Copying in Ni might require [[https://guix.gnu.org/manual/en/html_node/G_002dExpressions.html][~local-file~]] and/or [[https://guix.gnu.org/manual/en/html_node/package-Reference.html][~native-inputs~]].
+
 [[https://intfiction.org/t/command-line-inform-7-how-to-use-ni-inform6-and-cblorb-by-cli/50108][CLI guide]]
 
 [[https://intfiction.org/t/spaceformacs-authoring-in-inform7-with-spac-emacs/46440][Emacs setup]]
