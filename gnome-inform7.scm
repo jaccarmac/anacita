@@ -33,7 +33,8 @@
          (sha256
           (base32 "1awclkv1k10azjdxrbiyabvnkbif1jbfwl6jdpfzcx9gjvv7y63r"))))
       (build-system meson-build-system)
-      (arguments '(#:tests? #f))
+      (arguments '(#:glib-or-gtk? #t
+                   #:tests? #f))
       (native-inputs
        (list pkg-config))
       (inputs
@@ -68,7 +69,8 @@ from GtkTextBuffers.")
                      (substitute* "meson.build"
                        (("meson.add_install_script") "#meson.add_install_script"))))))
       (build-system meson-build-system)
-      (arguments '(#:tests? #f))
+      (arguments '(#:glib-or-gtk? #t
+                   #:tests? #f))
       (native-inputs
        (list pkg-config
              perl
@@ -118,7 +120,7 @@ from GtkTextBuffers.")
                    #:phases
                    (modify-phases %standard-phases
                      ;; Skip shrink-runpath.
-                     (delete 'shrink-runpath))))
+                     (delete 'shrink-runpath)))) ;; TODO Figure out how to only skip for ni.
       (native-inputs
        (list pkg-config
              `(,glib "bin")
