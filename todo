@@ -28,6 +28,10 @@ Use the gtk3 branch of gnome-inform7, or the Flatpak.
 
 Copying in Ni might require [[https://guix.gnu.org/manual/en/html_node/G_002dExpressions.html][~local-file~]] and/or [[https://guix.gnu.org/manual/en/html_node/package-Reference.html][~native-inputs~]].
 
+Clojure in Guix is built with multiple inputs. That's useful for figuring out
+how to do the build here, though it might not be necessary with the new open
+source release.
+
 [[https://intfiction.org/t/command-line-inform-7-how-to-use-ni-inform6-and-cblorb-by-cli/50108][CLI guide]]
 
 [[https://intfiction.org/t/spaceformacs-authoring-in-inform7-with-spac-emacs/46440][Emacs setup]]
