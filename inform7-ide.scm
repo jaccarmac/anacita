@@ -15,7 +15,8 @@
              (gnu packages webkit)
              (gnu packages libusb)
              (gnu packages gstreamer)
-             (gnu packages compression))
+             (gnu packages compression)
+             (gnu packages gettext))
 
 (define ratify
   (let ((commit "f4d2d60ec73d5588e953650b3879e69a727f30ca")
@@ -136,6 +137,7 @@ from GtkTextBuffers.")
              goocanvas
              webkitgtk
              libplist
+             gnu-gettext
              gstreamer
              gst-plugins-base
              gst-plugins-good
