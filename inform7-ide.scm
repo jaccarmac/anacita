@@ -91,19 +91,19 @@ from GtkTextBuffers.")
       (description "TODO")
       (license (license:non-copyleft "https://github.com/chimara/Chimara/blob/beda78bb187dbf52e2bade624d38adbe84da338b/COPYING")))))
 
-(define gnome-inform7
+(define inform7-ide
   (let ((commit ;; "4253b300e7380a3a5d2449d0f951a2ae209f7242"
          "166fa84c560bc2100a29474438eee07b8733052f") ; TODO Remove horrible hack.
         (revision "1"))
     (package
-      (name "gnome-inform7")
+      (name "inform7-ide")
       (version (git-version "6M62" revision commit))
       (source
        (origin
          (method git-fetch)
          (uri (git-reference
-               (url ;; "https://github.com/ptomato/gnome-inform7"
-                "https://github.com/jaccarmac/gnome-inform7") ; TODO Remove horrible hack.
+               (url ;; "https://github.com/ptomato/inform7-ide"
+                "https://github.com/jaccarmac/inform7-ide") ; TODO Remove horrible hack.
                (commit commit)))
          (file-name (git-file-name name version))
          (sha256
@@ -151,4 +151,4 @@ for MacOS, Windows, Linux and Android.  Inside it is a powerful programming
 language based on English language text.")
       (license license:gpl3))))
 
-gnome-inform7
+inform7-ide
