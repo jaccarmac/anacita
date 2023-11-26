@@ -20,7 +20,7 @@
              (gnu packages gettext))
 
 (define ratify
-  (let ((commit "f4d2d60ec73d5588e953650b3879e69a727f30ca")
+  (let ((commit "c21d3de0431a6d4e3ecfdfaa720a932c0e8e691e")
         (revision "1"))
     (package
       (name "ratify")
@@ -33,7 +33,7 @@
                (commit commit)))
          (file-name (git-file-name name version))
          (sha256
-          (base32 "1awclkv1k10azjdxrbiyabvnkbif1jbfwl6jdpfzcx9gjvv7y63r"))))
+          (base32 "0iwjva4hvhrvda76ghw32p1m2niz5h3fjkn06n34sfvcb4s5gz2i"))))
       (build-system meson-build-system)
       (arguments
        '(#:glib-or-gtk? #t
@@ -49,11 +49,11 @@ from GtkTextBuffers.")
       (license license:gpl3))))
 
 (define chimara
-  (let ((commit "9934b142af508c75c0f1eed597990f39495b1af4")
+  (let ((commit "04ff30aaf404e18f98e1ab86533c9dece11cb605")
         (revision "1"))
     (package
       (name "chimara")
-      (version (git-version "0.9.1" revision commit))
+      (version (git-version "0.9.3" revision commit))
       (source
        (origin
          (method git-fetch)
@@ -62,7 +62,7 @@ from GtkTextBuffers.")
                (commit commit)))
          (file-name (git-file-name name version))
          (sha256
-          (base32 "1jj4fa4jkglymljyp2rclfdlq0yx2a1j1k4a0k9j4s8pgxfza739"))
+          (base32 "05avgkxm4cnjiihswxvy3w0sd8bh9d9lnly2hai5cn544a3y5wva"))
          (modules '((guix build utils)))
          (snippet '(begin
                      ;; Skip the custom install script.
